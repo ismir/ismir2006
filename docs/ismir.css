@@ -1,0 +1,257 @@
+/* WARNING - uses font size hack to get similar sizes on
+    various browsers
+	see e.g. http://www.phespirit.info/cafe/css_hacks.htm
+	For info on these browser hacks
+	NB: Our pages use an XHTML 1.0 Transitional DOCTYPE:
+	  <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" ...>
+	which MUST be the first item in the file.
+	This switches IE6+ into compatibility mode, so its font sizes
+	must be set one size larger than IE5 for the same effect.
+
+	To do:
+	Sizes in top navigation bar are currently in pixels.
+	Resize this to a more sensible value later.
+
+	This style sheet is borrowed extensively from
+	http://www.phespirit.info/stylesheet/phespirit.css
+
+	See also
+	http://diveintoaccessibility.org/day_26_using_relative_font_sizes.html
+
+	NB: NN4 doesn't understand class names with underscores "_"
+*/
+
+
+/* NN4 text-size styles */
+
+h1, .navheader {
+	font-size : medium;
+	font-weight : bold;
+}
+h2 {
+	font-size : medium;
+}
+th, td, ul, ol, dl, dt, dd, p, div, blockquote, pre, code, caption, h3 {
+	font-size : small;
+}
+.figcaption, .breadcrumbs, .tiny {
+	font-size: x-small;
+}
+
+/* IE4+ OP6+ text-size styles */ 
+/* IE6+ assumes <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN">
+	(or any DOCTYPE that causes IE6+ to go into conformance mode)
+
+	Microsoft Internet Explorer versions 4 and 5 cannot detect 
+	styles after  voice-family : "\"}\"";  due to a bug in their 
+	implementation of voice-family.
+*/
+
+/*/*/a{}
+
+body h1, body .navheader {
+	font-size : medium;
+ 	voice-family : "\"}\"";
+	voice-family : inherit;
+	font-size : large;
+}
+body h1{
+	font-weight : bold; 
+}
+body .navheader {
+	font-weight : normal;
+}
+body h2 {
+	font-size : small;
+ 	voice-family : "\"}\"";
+	voice-family : inherit;
+	font-size : medium;
+}
+body, body th, body td, body ul, body ol, body dl, body dt, body dd, body p, body div, body blockquote, body pre, body code, body h3, body caption {
+	font-size : x-small;
+ 	voice-family : "\"}\"";
+	voice-family : inherit;
+	font-size : small;
+}
+body .figcaption,  body .breadcrumbs, body .tiny  {
+	font-size: xx-small;
+ 	voice-family : "\"}\"";
+	voice-family : inherit;
+	font-size : x-small;
+}
+
+/* */
+
+/* OP5+ text-size styles */ 
+/* OP5 gets confused by voice-family too, but it understands ">" */
+
+/* First, hide from NN4 */
+/*/*/a{}
+
+html>body h1, html>body .navheader{
+  font-size: large;
+}
+html>body h2 {
+  font-size: medium;
+}
+html>body, html>body th, html>body td, html>body ul, html>body ol, html>body dl, html>body dt, html>body dd, html>body p, html>body div, html>body blockquote, html>body pre, html>body code, html>body h3, html>body caption {
+  font-size: small;
+}
+html>body .figcaption, html>body .breadcrumbs, html>body .tiny  {
+  font-size: x-small;
+}
+/* */
+
+/* END OF BROWSER HACKS */
+
+/* Rest of file: styles that apply to all browsers */
+/* foundation styles */
+
+/*
+body {
+	background-color: #FFFFFF;
+	margin: 0px;
+	padding: 0px;
+}
+*/
+body {
+	background-color: #FFFFFF;
+}
+body, th, td, ul, ol, dl, dt, dd, p, div, blockquote, caption, h1, h2, h3 {
+	font-family: arial, helvetica, sans-serif;
+}
+h1 {
+	color: #333399;
+	margin-top: 5px;
+}
+.figcaption {
+	color: #333399;
+}
+
+body, td, ul, ol, dl, dt, dd, p, div, blockquote {
+	text-align : left;
+	vertical-align : top;
+	color : #000000;
+	font-weight : normal;
+}
+th {
+	text-align : left;
+	vertical-align : top;
+	color : #000000;
+	font-weight : bold;
+}
+pre, code {
+	font-family : courier new, monospace;
+}
+b, strong {
+	font-weight : bold;
+}
+i, em, address {
+	font-style : italic;
+}
+img {
+	border-color : #000000;
+}
+li {
+	margin-top : 0;
+	margin-bottom: 0;
+}
+hr	{
+	background : transparent;
+	height : 1px;
+	color : #000000;
+}
+/* NN4 fix - sets non-NN4 horizontal rule width (NN4 decreases width in nested tables) */
+/*/*/a{}
+body hr {
+	width : 100%;
+}
+/* */
+
+blockquote hr {
+	text-align : left;
+	margin : 0;
+}
+
+/* Vertical and horizontal dividers */
+.vdivider,.hdivider {
+	background-color: #000033;
+}
+.vdivider {
+	width: 1px;
+}
+.hdivider {
+	height: 1px;
+}
+/* Side navigation bar and bottom address bar */
+.navbar, .addressbar {
+	background-color: #CCCCFF;
+}
+.addressbar {
+	text-align: center;
+}
+/* alignment styles */
+
+.alignl		{ text-align : left; }
+.alignc {	text-align : center; }
+.alignr		{ text-align : right; }
+.alignj		{ text-align : justify; }
+.alignt		{ vertical-align : top; }
+.alignm		{ vertical-align : middle; }
+.alignb		{ vertical-align : bottom; }
+.aligncm		{ text-align : center; vertical-align : middle; }
+.aligncb		{ text-align : center; vertical-align : bottom; }
+.alignrm		{ text-align : right; vertical-align : middle; }
+.alignrb		{ text-align : right; vertical-align : bottom; }
+
+/* For backwards compatibility: old higlight boxes*/
+.highltHdr { 
+ 	background-color: #FF9900; font-weight: bold
+} 
+.highltText { 
+	background-color: #FFFF99 
+}
+
+/* New highlight box (used for e.g. "new"). */
+.highlight {
+	color: #FFFFFF;
+	background-color: #333399;
+	font-size: 0.9em;
+}
+
+/* Link styles */
+/* Links in blue with underline on hover */
+a {
+	color: #333399;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+/* Styles for top navigation bar (and possible link to intranet) */
+/* Used to fix size of top navigation bar in *pixels*
+	(so that it wouldn't break if resized)
+	This used to be: font-size: 12px;*/
+.topbar, .topbar a {
+	background-color: #333399;
+	color: #CCCCFF;
+}
+.intranet, .intranet a {
+	color: #CCFFCC;
+	background-color: #006600;
+}
+/* Links on top bar go white (and underline) on hover */
+.topbar a, .intranet a {
+	font-weight: bold;
+}
+.topbar a:hover {
+	color: #FFFFFF;
+}
+/* Class to use to make top bar links white when selected */
+.topbar a.topbuttonsel {
+	color: #FFFFFF;
+}
+/* Other misc styles */
+.noborder {
+	border: 0px #333399;
+}

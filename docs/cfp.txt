@@ -1,0 +1,51 @@
+Int. Conference on Music Information Retreival (ISMIR 06) 
+October 8-12, 2006,
+Fairmont Empress Hotel, Victoria, BC, Canada
+http://ismir2006.ismir.net
+
+
+ISMIR 2006 Call for Submissions
+
+ISMIR 2006 is the seventh international conference on Music Information
+Retrieval and will be held at the Fairmont Empress Hotel in beautiful 
+Victoria, Canada. The annual ISMIR Conference is the established
+international forum for those working on accessing digital musical
+material. It reflects the tremendous recent growth of music-related
+data available and the consequent need to search within it to retrieve
+music and musical information efficiently and effectively. These
+concerns are of interest to academia, industry, entertainment, and
+education. ISMIR therefore aims to provide a place for the exchange
+and discussion of news, issues and results, by bringing together
+researchers and developers, educators and librarians, students and
+professional users, working in fields that contribute to this
+multidisciplinary domain, to present original theoretical or practical
+work. It also serves as a discussion forum, provides introductory and
+in-depth information in specific domains, and showcases current
+products and systems.
+
+SCOPE
+
+Papers, posters/demos, tutorial and panels are solicited for, 
+but not limited to, the general areas:
+
+- Music libraries, archives, digital collections
+- Intellectual Property rights and business issues
+- Western and non-western musicology, music analysis
+- Composition, musical forms and structures
+- Searching, navigation, retrieval 
+- Knowledge representation
+- Music perception, cognition, affect, emotion
+- Human-computer interaction and interfaces 
+- Databases, languages, protocols 
+- Systems, internet software, mobile devices
+- Social and ethical issues 
+
+SCHEDULE
+
+- Papers, posters/demos, tutorials, panels  : 17 April 2006
+- Notification of acceptance                : 15 June  2006 
+- Camera-ready paper submission             : 08 July  2006                     
+
+
+Check the conference website http://ismir2006.ismir.net for more
+details and updates. 
